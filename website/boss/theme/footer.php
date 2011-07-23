@@ -1,0 +1,11 @@
+
+   </div><!-- #content -->
+
+   <div id="footer">
+      <p>Copyright &copy; <?= date( 'Y' ); ?> <?= Util::getConfig( 'site_title' ) ?>.</p>
+   </div>
+</div><!-- #wrapper -->
+
+</body>
+</html>
+

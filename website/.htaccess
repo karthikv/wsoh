@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# remove www
+RewriteCond %{HTTP_HOST} !^pigeoncarrier\.com$       [NC]
+RewriteRule ^(.*)$       http://pigeoncarrier.com/$1 [R=301,L]
+
+# redirect to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?request=$1 [L,QSA]
+

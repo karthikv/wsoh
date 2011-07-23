@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html { font-size: 62.5%; }
+
+body {
+    font: 145%/1.5 Georgia, Cambria, "Times New Roman", Times, Serif;
+    color: #222;
+    background: url('http://pigeoncarrier.com/images/stripe.png') repeat;
+}
+
+a {
+    color: #EBA0A0;
+    border-bottom: 1px dotted;
+    text-decoration: none;
+}
+
+#fancybox-wrap a {
+    border: none;
+}
+
+a:hover {
+    border-bottom-style: solid;
+}
+
+p {
+    padding-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Verdana, Sans-Serif;
+    letter-spacing: -2px;
+    font-weight: normal;
+    line-height: 1;
+    margin: 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+h1 { font-size: 200%; }
+h2 { font-size: 160%; }
+h3 { font-size: 140%; }
+h4 { font-size: 130%; }
+h5 { font-size: 12%; }
+h6 { font-size: 110%; }
+
+ul, ol {
+    padding-bottom: 20px;
+    margin-left: 30px;
+}
+
+table {
+    width: 99%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+tr {
+    border-bottom: 1px dotted #ccc;
+}
+
+thead {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.odd {
+    background: #f6f6f6;
+}
+
+td {
+    text-align: center;
+    padding: 5px 10px;
+}
+
+#wrapper {
+    width: 620px;
+    margin: 0 auto;
+    background: #fff;
+    border-left: 1px solid #F2DADA;
+    border-right: 1px solid #F2DADA;
+    padding: 0 35px;
+}
+
+#content {
+    min-height: 660px;
+}
+
+#footer {
+    clear: both;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+blockquote {
+    margin: 20px 0 30px;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 200%;
+    font-family: 'Podkova', serif;
+    letter-spacing: -1px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* header */
+#header h1 {
+    margin: 0;
+    border: none;
+}
+
+#header a {
+    text-indent: -9999px;
+    display: block;
+    width: 690px;
+    height: 200px;
+    margin: 0 -35px;
+    background: url('../images/pigeon-carrier.png') no-repeat;
+}
+
+/* tutorial list */
+#download_header {
+    margin-bottom: 25px;
+}
+
+#dl_link {
+    border: none;
+    text-indent: -9999px;
+    display: block;
+    float: right;
+    margin-right: 240px;
+    margin-top: -3px;
+    width: 80px;
+    height: 32px;
+    background: url( '../images/download.jpg' ) no-repeat;
+}
+
+#dl_link:active, #dl_link:focus {
+    background-image: url( '../images/download-pressed.jpg' );
+}
+
+#tutorial h2 {
+    letter-spacing: -1px;
+    border: none;
+}
+
+#tutorial img {
+    display: block;
+    margin: 0 auto 30px;
+    padding: 10px;
+    background: #F2DADA;
+    border: 1px solid #EBA0A0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    /* sorry ie */
+}
+
+#tutorial .step {
+    margin-right: 3px;
+    color: #EAC4C5;
+    font-size: 80%;
+}
+
+/* File list */
+.display-list {
+     margin-left: 0;
+}
+
+.display-list li {
+     margin-left: 0;
+     list-style-type: none;
+     overflow: hidden;
+     border-bottom: 1px dotted #ccc;
+     padding: 5px 0;
+}
+
+.display-list img {
+     float: left;
+     margin-right: 5px;
+     margin-top: 3px;
+}
+
+.display-list .actions {
+     float: right;
+}
+
+/* Forms */
+form p {
+    padding-bottom: 10px;
+}
+
+form p {
+    padding: 5px 0;
+    border-bottom: 1px dotted #eee;
+}
+
+form small {
+    font: 13px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Verdana, Sans-Serif;
+    color: #bbb;
+    margin-left: 10px;
+}
+
+label, input, textarea, select {
+    font: 13px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Verdana, Sans-Serif;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+    font-family: Georgia, Cambria, "Times New Roman", Times, Serif;
+    font-size: 14px;
+    float: left;
+    margin-top: 5px;
+}
+
+input, textarea, select {
+    border: 1px solid #ccc;
+    padding: 7px;
+    width: 200px;
+    height: 16px;
+    background: #f6f6f6;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.radio-field {
+    width: 15px;
+    margin-top: 5px;
+}
+
+.number-field {
+    width: 20px;
+}
+
+.checkbox-field {
+    width: 15px;
+    margin-top: 5px;
+}
+
+.ampm {
+    width: 60px;
+}
+
+textarea {
+    width: 360px;
+    height: 160px;
+    line-height: 1.5;
+}
+
+select, .submit-field  {
+    height: 33px;
+    width: 215px;
+}
+
+.submit-field {
+    width: auto;
+    padding: 0 15px;
+    margin: 5px 0 0 120px;
+    background: #333;
+    color: #fff;
+}
+
+input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:focus, .submit-field {
+    border-color: #aaa;
+    box-shadow: 0px 0px 10px #aaa;
+    -moz-box-shadow: 0px 0px 5px #aaa;
+    -webkit-box-shadow: 0px 0px 5px #aaa;
+}
+
+.submit-field, .submit-field:hover, .submit-field:focus {
+    border-color: #2a2a2a;
+}
+
+.submit-field:focus {
+    color: #000;
+}
+
+input:focus, textarea:focus {
+    background: #fff;
+}
+
+.success, .error, .info {
+    padding: 10px 20px 8px 20px;
+    margin-bottom: 10px;
+}
+
+.success-container, .error-container, .info-container {
+    padding: 15px 20px 0 20px;
+}
+
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+
+.success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+
+.info {
+    color: #00529B;
+    background-color: #BDE5F8;
+}
+
+/* Miscellaneous Styles */
+.none { display: none; }
+
